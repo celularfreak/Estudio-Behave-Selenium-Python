@@ -30,17 +30,7 @@ def enterPassword(context):
 def pushButton(context):
 	context.driver.implicitly_wait(3)
 	context.driver.find_element(By.XPATH, '//*[@id="new_user"]/div[2]/input').click()
-"""""
-@then('I Click event on the agenda')
-def clickEvent(context):
-	context.driver.find_elemenet(By.XPATH, '//*[@id="events-list"]/div[3]/div[3]/div[3]/a').click()
 
-@then ('I click on the subscribe button')
-def clickSubscribe(context):
-	context.driver.implicity_wait(3)
-	context.driver.find_element(By.XPATH, '//*[@id="events-list"]/div[3]/div[3]/div[3]/a').click()
-
-"""
 @then('I enter "Gemartin" in the search field')
 def search(context):
     context.driver.find_element(By.XPATH, "/html/body/div[3]/div[1]/form/span/input").send_keys("Proche-c")
@@ -64,9 +54,6 @@ def checkProfile(context):
 		test = False
 	assert test is True
 
-	
-		#print("The profile is displayed")
-	
 @then('I close the browser')
 def closeBrowser(context):
 	context.driver.close()
