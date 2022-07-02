@@ -1,6 +1,6 @@
 Feature: Login into 42 intra and search for Gemartin profile
 	Scenario: Login into 42 intra and search a profile
-		Given Launch chrome browser
+		Given Launch chrome browser 1
 		When open the url "https://www.intra.42.fr/"
 			Then I enter my login
 			And I enter my Password
