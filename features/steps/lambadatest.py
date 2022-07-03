@@ -25,7 +25,8 @@ def step_impl(context):
 
 @when('I search term as "LambdaTest" on Google')
 def step_impl(context):
-	WebDriverWait(context.driver,10).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='L2AGLb']/div"))).click() 
+	#WebDriverWait(context.driver,10).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='L2AGLb']/div"))).click() 
+	context.driver.find_element(By.XPATH, "//*[@id='L2AGLb']/div").click()
 	context.driver.find_element(By.CSS_SELECTOR, "input[name='q']").send_keys("LambdaTest")
 	context.driver.find_element(By.CSS_SELECTOR, "input[name='q']").send_keys(Keys.ENTER)
 
