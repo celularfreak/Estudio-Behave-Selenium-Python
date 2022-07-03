@@ -1,4 +1,4 @@
-Feature: investigando
+Feature: (REST-API) Get from mock rest api a json response
 Scenario: Fetch from a mock rest api a json response
 	Given the mock url
 		When we consume the endpoint
