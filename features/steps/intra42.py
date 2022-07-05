@@ -9,7 +9,7 @@ def step_impl(context):
 
 @when('I enter my login')
 def step_impl(context):
-	context.driver.implicitly_wait(60)
+	#context.driver.implicitly_wait(60)
 	context.driver.find_element(By.XPATH, "//input[@placeholder='Login']").send_keys("")
 
 @when('I enter my Password')

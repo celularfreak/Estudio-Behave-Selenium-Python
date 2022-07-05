@@ -11,7 +11,7 @@ def before_all(context):
 	print("> Starting the browser")
 	context.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 	
-def afer_all(context):
+def after_all(context):
 	print("> Closing the browser")
 	context.driver.close()
 	context.driver.quit()
