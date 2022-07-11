@@ -9,7 +9,6 @@ def step_impl(context):
 @when('we consume the endpoint')
 def step_impl(context):
    context.response = requests.session().get(context.url)
-
 @then('json response is retrieved with right data and 200 as status code')
 
 def step_impl(context):
